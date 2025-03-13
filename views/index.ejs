@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AniWheel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/public/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="/public/images/captains_wheel.svg" height="40" alt="Logo" loading="lazy">
+      <span class="logo-color-1">ANI</span><span class="logo-color-2">WHEEL</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Anime List</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Navbar -->
+
+<!-- Carousel -->
+<header>
+  <style>
+    /* Carousel styling */
+    #introCarousel .carousel-inner,
+    .carousel-item {
+      height: 100vh;
+    }
+
+    .carousel-item {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .carousel-item:nth-child(1) {
+      background-image: url('/public/images/hunter_by_cecap_dglslrp.png');
+    }
+
+    .carousel-item:nth-child(2) {
+      background-image: url('/public/images/wallpaperflare.com_wallpaper (2).jpg');
+    }
+
+    .carousel-item:nth-child(3) {
+      background-image: url('/public/images/wallpaperflare.com_wallpaper (3).jpg');
+    }
+
+    .carousel-overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .carousel-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      color: white;
+    }
+  </style>
+
+  <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-bs-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#introCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#introCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#introCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- Inner -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel-overlay"></div>
+        <div class="d-flex justify-content-center align-items-center vh-100">
+          <div class="carousel-content">
+            <h1>Discover Amazing Anime</h1>
+            <p>Find the best anime to watch</p>
+            <a class="btn btn-primary btn-lg" href="#">Explore Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="carousel-overlay"></div>
+        <div class="d-flex justify-content-center align-items-center vh-100">
+          <div class="carousel-content">
+            <h1>Explore Top-Ranked Anime</h1>
+            <p>Get recommendations based on ranking</p>
+            <a class="btn btn-primary btn-lg" href="#">View Rankings</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="carousel-overlay"></div>
+        <div class="d-flex justify-content-center align-items-center vh-100">
+          <div class="carousel-content">
+            <h1>Random Anime Generator</h1>
+            <p>Can't decide? Get a random anime suggestion</p>
+            <a class="btn btn-primary btn-lg" href="#">Generate Anime</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#introCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#introCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</header>
+<!-- Carousel -->
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+  <p>Follow Us</p>
+  <a href="#" class="text-white mx-2"><i class="fab fa-youtube"></i></a>
+  <a href="#" class="text-white mx-2"><i class="fab fa-facebook"></i></a>
+  <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+  <a href="#" class="text-white mx-2"><i class="fab fa-github"></i></a>
+  <hr class="bg-light">
+  <p class="mb-0">&copy; 2025 AniWheel. All Rights Reserved.</p>
+</footer>
+<!-- Footer -->
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
