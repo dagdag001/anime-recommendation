@@ -20,7 +20,9 @@ app.get("/random", async (req, res) => {
             poster: anime.images.jpg.image_url,
             rank: anime.rank,
             url: anime.url,
-            synopsis: anime.synopsis
+            synopsis: anime.synopsis,
+            score: anime.score,
+            scored_by: anime.scored_by
         };
 
         res.render("anime.ejs", { content });
